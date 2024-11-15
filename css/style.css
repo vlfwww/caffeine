@@ -269,6 +269,9 @@
   position: relative;
   left: 65px;
 }
+.revie .wrapper .block .arrow {
+  display: none;
+}
 .revie .wrapper .block .center {
   margin-top: -70px;
   max-width: 780px;
@@ -340,4 +343,179 @@ footer .block2 .wrapper_footer .block p {
 }
 footer .block2 .wrapper_footer .block:last-of-type {
   max-width: 332px;
+}
+
+@media screen and (max-width: 1220px) {
+  .catalog .wrapper, .why .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr 30px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .catalog .wrapper > *:nth-child(1), .why .wrapper > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .catalog .wrapper > *:nth-child(2), .why .wrapper > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .catalog .wrapper > *:nth-child(3), .why .wrapper > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .catalog .wrapper > *:nth-child(4), .why .wrapper > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .revie .wrapper .block .left, .revie .wrapper .block .right {
+    display: none;
+  }
+  .revie .wrapper .block .center {
+    margin: 0 auto;
+  }
+  .revie .arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    margin: 80px auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .revie .arrow img:last-of-type {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+@media screen and (max-width: 1038px) {
+  .head .wrapper_head header .links, .head .wrapper_head header .sing {
+    display: none;
+  }
+  .bestCoffee .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bestCoffee .right img {
+    width: 200px;
+    height: 200px;
+  }
+  .chance .wrapper_chance .left h2 {
+    font-size: 20px;
+  }
+  .chance .wrapper_chance .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .chance .wrapper_chance .right img {
+    width: 200px;
+  }
+  footer .block1 {
+    display: none;
+  }
+  footer .block2 .wrapper_footer {
+    display: block;
+  }
+  footer .block2 .wrapper_footer .block_left {
+    margin-bottom: 30px;
+  }
+  footer .block2 .wrapper_footer .block_left h2 {
+    margin-top: -20px;
+  }
+  footer .block2 .wrapper_footer .block_left p {
+    display: none;
+  }
+  footer .block2 .wrapper_footer .block p {
+    display: none;
+  }
+}
+@media screen and (max-width: 836px) {
+  .head .wrapper_head header {
+    padding: 20px;
+    text-align: center;
+  }
+  .head .wrapper_head .previe {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+  }
+  .head .wrapper_head .previe h1 {
+    font-size: 100px;
+  }
+  .head .wrapper_head .previe p {
+    font-size: 17px;
+    width: auto;
+  }
+  .bestCoffee {
+    padding: 20px;
+  }
+  .bestCoffee .left {
+    margin-top: 0;
+  }
+  .bestCoffee .left h3 {
+    font-size: 38px;
+  }
+  .bestCoffee .left p {
+    font-size: 17px;
+  }
+  .catalog h2, .why h2 {
+    font-size: 38px;
+  }
+  .catalog p, .why p {
+    font-size: 17px;
+  }
+  .catalog .wrapper, .why .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .chance .wrapper_chance {
+    padding: 20px;
+  }
+  .chance .wrapper_chance .left {
+    margin-top: 30px;
+  }
+  .revie {
+    padding: 20px;
+  }
+  .revie h2 {
+    font-size: 38px;
+  }
+  .revie p {
+    font-size: 17px;
+  }
+  footer .block2 .wrapper_footer {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .bestCoffee .left h3 {
+    font-size: 20px;
+  }
+  .bestCoffee .left p {
+    font-size: 12px;
+  }
+  .chance .wrapper_chance .right img {
+    width: 100px;
+  }
+  .revie .wrapper .block .center p {
+    font-size: 17px;
+  }
 }
